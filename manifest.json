@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+
+  "name": "cowify",
+  "description": "This extension replaces images on a website with a cow photo.",
+  "version": "1.0",
+  "author": "jbrownrs",
+  "web_accessible_resources" : [
+    "images/*.jpeg"
+  ],
+  "background" : {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "icons": {
+    "48": "cow_icon.png"
+  },
+  "browser_action": {
+    "default_title": "Cowify",
+    "default_icon": {
+      "19":"cow_icon.png",
+      "20":"cow_icon.png",
+      "38":"cow_icon.png"
+    }
+  },
+  "permissions": [
+    "activeTab"
+  ]
+}
