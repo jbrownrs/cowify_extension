@@ -4,6 +4,15 @@ window.browser = (function () {
         window.browser ||
         window.chrome;
 })();
+
 browser.browserAction.onClicked.addListener(function(tab) {
-    chrome.tabs.executeScript(null, {file: "imageSwap.js"});
+    browser.storage.sync.get('state', function(data) {
+        if (data.state === 'on') {
+            browser.storage.sync.set({state: 'off'});
+            browser.tabs.executeScript(null, {file: "reload.js"});
+        } else {
+            browser.storage.sync.set({state: 'on'});
+            browser.tabs.executeScript(null, {file: "imageSwap.js"});
+        }
+    });
 });

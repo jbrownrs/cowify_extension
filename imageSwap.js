@@ -5,13 +5,15 @@ window.browser = (function () {
         window.chrome;
 })();
 
-console.log("Cowify content script started");
+console.log("Cowify imageSwap script started");
+replace();
 
-let images = document.querySelectorAll('img', 'picture, figure');
-for (imgElt of images) {
-    let cowFile = 'images/cow.jpeg';
-    let url = browser.extension.getURL(cowFile);
-    imgElt.src = url;
-    imgElt.style.objectFit = 'cover'
-    imgElt.style.objectPosition = '50%'
+function replace() {
+    let images = document.querySelectorAll('img', 'picture, figure');
+    for (imgElt of images) {
+        let cowFile = 'images/cow.jpeg';
+        imgElt.src = browser.runtime.getURL(cowFile);
+        imgElt.style.objectFit = 'cover';
+        imgElt.style.objectPosition = '50%';
+    }
 }
