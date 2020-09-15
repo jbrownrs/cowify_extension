@@ -5,9 +5,6 @@
   "description": "This extension replaces images on a website with a cow photo.",
   "version": "1.0",
   "author": "jbrownrs",
-  "web_accessible_resources" : [
-    "images/*.jpeg"
-  ],
   "background" : {
     "scripts": ["background.js"],
     "persistent": false
@@ -24,7 +21,6 @@
     }
   },
   "permissions": [
-    "activeTab",
-    "storage"
+    "activeTab"
   ]
 }
