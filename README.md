@@ -1,4 +1,4 @@
-#Cowify
+# Cowify
 A browser extension for replacing images in your current tab with a selection of cows!
 
 ## Install (Chrome)
