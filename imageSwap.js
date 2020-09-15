@@ -1,6 +1,9 @@
 COWS = ['https://images.freeimages.com/images/large-previews/671/cow-1366498.jpg',
     'https://images.freeimages.com/images/large-previews/03b/cow-1402871.jpg',
-    'https://live.staticflickr.com/2696/4185100143_125677f422_z.jpg'
+    'https://live.staticflickr.com/2696/4185100143_125677f422_z.jpg',
+    'https://images.freeimages.com/images/large-previews/d2a/curious-cows-1-1368003.jpg',
+    'https://images.freeimages.com/images/large-previews/810/highlander-1325292.jpg',
+    'https://images.freeimages.com/images/large-previews/85d/galloway-cows-1-1487504.jpg'
 ]
 
 // Ensure works on multiple browsers
