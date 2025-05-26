@@ -20,5 +20,5 @@ Click the browser extension icon to replace images in the current tab. Images wi
   selection of cow images, for example:
 
 ![Amazon screenshot with cows replacing the product images](amazon_screenshot.jpg?raw=true "Amazon website with cows")
-
+![BBC News screenshot with cows replacing the images](bbc_screenshot.jpg?raw=true "BBC News website with cows")
 Click again to reapply the image replacement. Note: as the cow images are randomly selected each time, an image may not change.
