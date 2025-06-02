@@ -1,4 +1,5 @@
-COWS = ['https://images.freeimages.com/images/large-previews/671/cow-1366498.jpg',
+COWS = [
+    'https://images.freeimages.com/images/large-previews/671/cow-1366498.jpg',
     'https://images.freeimages.com/images/large-previews/03b/cow-1402871.jpg',
     'https://live.staticflickr.com/2696/4185100143_125677f422_z.jpg',
     'https://images.freeimages.com/images/large-previews/d2a/curious-cows-1-1368003.jpg',
@@ -10,7 +11,7 @@ console.log("Cowify imageSwap script started");
 replace();
 
 function replace() {
-    let images = document.querySelectorAll('img');
+    const images = document.querySelectorAll('img');
     images.forEach(img => {
         const cowFile = rand(COWS);
         img.setAttribute('srcset', cowFile);
